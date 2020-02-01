@@ -10,7 +10,7 @@ public class SpawnScript : MonoBehaviour {
     private long _lastSecond = 1;
 
     void Start() {
-        InvokeRepeating("EverySecond", 0f, 0.25f);
+        InvokeRepeating("EverySecond", 0f, 0.5f);
     }
 
     bool IsNearPlayer(float x, float y) => (Math.Pow((x - 500)*(x - 500) + (y - 1)*(y - 1), 0.5) < 1.0);
